@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>融宜出行快速</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🚗</span>
+                    <span class="logo-text">融宜出行</span>
+                </div>
+                <div class="header-title">快速出行</div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="service-section">
+                <div class="service-card active" id="ride-hailing">
+                    <div class="service-icon">🚕</div>
+                    <div class="service-name">打车</div>
+                </div>
+                <div class="service-card" id="car-rental">
+                    <div class="service-icon">🚙</div>
+                    <div class="service-name">租车</div>
+                </div>
+                <div class="service-card" id="carpool">
+                    <div class="service-icon">👥</div>
+                    <div class="service-name">拼车</div>
+                </div>
+                <div class="service-card" id="express">
+                    <div class="service-icon">⚡</div>
+                    <div class="service-name">快车</div>
+                </div>
+            </div>
+
+            <div class="location-section">
+                <div class="location-item">
+                    <div class="location-icon start">📍</div>
+                    <div class="location-info">
+                        <div class="location-label">起点</div>
+                        <input type="text" class="location-input" placeholder="请输入起点位置">
+                    </div>
+                </div>
+                <div class="location-arrow">↓</div>
+                <div class="location-item">
+                    <div class="location-icon end">🚩</div>
+                    <div class="location-info">
+                        <div class="location-label">终点</div>
+                        <input type="text" class="location-input" placeholder="请输入终点位置">
+                    </div>
+                </div>
+            </div>
+
+            <div class="estimate-section">
+                <div class="estimate-info">
+                    <div class="estimate-label">预计费用</div>
+                    <div class="estimate-price">
+                        <span class="price-symbol">¥</span>
+                        <span class="price-value">0</span>
+                        <span class="price-unit">起</span>
+                    </div>
+                </div>
+                <div class="estimate-time">
+                    <div class="estimate-label">预计时间</div>
+                    <div class="estimate-value">--</div>
+                </div>
+            </div>
+
+            <button class="order-btn" id="orderBtn">立即叫车</button>
+
+            <div class="promotion-section">
+                <div class="promotion-card">
+                    <div class="promotion-icon">🎁</div>
+                    <div class="promotion-content">
+                        <div class="promotion-title">新用户专享</div>
+                        <div class="promotion-desc">首单立减10元</div>
+                    </div>
+                    <div class="promotion-arrow">›</div>
+                </div>
+            </div>
+        </main>
+
+        <nav class="bottom-nav">
+            <div class="nav-item active">
+                <div class="nav-icon">🏠</div>
+                <div class="nav-text">首页</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon">📋</div>
+                <div class="nav-text">订单</div>
+            </div>
+            <div class="nav-item">
+                <div class="nav-icon">👤</div>
+                <div class="nav-text">我的</div>
+            </div>
+        </nav>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
